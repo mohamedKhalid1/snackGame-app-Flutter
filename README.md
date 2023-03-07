@@ -1,4 +1,4 @@
-# snack_game2
+# snack_game
 
 A new Flutter project.
 
