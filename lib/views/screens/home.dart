@@ -155,14 +155,14 @@ class _HomeState extends State<Home> {
                 content: Text(
                   "Score : $currentScore",
                   style: const TextStyle(
-                    color: Color.fromARGB(255, 206, 22, 215),
+                    //color: Color.fromARGB(255, 206, 22, 215),
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
                 ),
                 actions: [
                   ButtonWidget(
-                      color: const Color.fromARGB(255, 206, 22, 215),
+                      color: Colors.green,
                       press: () {
                         setState(() {
                           newGame();
@@ -183,18 +183,18 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(4.0),
           child: Column(
             children: [
               Expanded(
-                flex: 2,
+                flex: 1,
                 child: ScoreWidget(
                   currentScore: currentScore,
                   highScore: highScore,
                 ),
               ),
               Expanded(
-                flex: 5,
+                flex: 6,
                 child: GestureDetector(
                   onHorizontalDragUpdate: (details) {
                     if (details.delta.dx > 0 &&
@@ -220,13 +220,12 @@ class _HomeState extends State<Home> {
                     itemCount: sumOfPixels,
                     itemBuilder: (context, index) {
                       if (snackPosition.contains(index)) {
-                        return const PixelsColor(
-                            Color.fromARGB(255, 206, 22, 215));
+                        return const PixelsColor(Colors.white);
                       } else if (foodValue == index) {
                         return const PixelsColor(
                             Color.fromARGB(255, 7, 224, 25));
                       } else {
-                        return const PixelsColor(Colors.black);
+                        return const PixelsColor(Color(0xFF404040));
                       }
                     },
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -247,7 +246,7 @@ class _HomeState extends State<Home> {
                       },
                       text: "PLAY"),
                   ButtonWidget(
-                      color: const Color.fromARGB(255, 206, 22, 215),
+                      color: Colors.greenAccent,
                       press: () {
                         if (speed != 160) {
                           speed = 160;
@@ -255,7 +254,7 @@ class _HomeState extends State<Home> {
                       },
                       text: "X1"),
                   ButtonWidget(
-                      color: const Color.fromARGB(255, 206, 22, 215),
+                      color: Colors.greenAccent,
                       press: () {
                         if (speed != 120) {
                           speed = 120;
