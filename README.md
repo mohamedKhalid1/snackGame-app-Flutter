@@ -1,7 +1,5 @@
 # snack_game
 
-A new Flutter project.
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -14,4 +12,4 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-https://user-images.githubusercontent.com/93306259/223469051-3da30f35-8d0d-4443-ae12-d790dc14dbf2.mp4
+![snak game](https://user-images.githubusercontent.com/93306259/223470352-87476cee-028c-454d-ac65-853b2d8580db.gif)
